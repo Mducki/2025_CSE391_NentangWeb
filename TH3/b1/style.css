@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  background: linear-gradient(to right, #e8f0ff, #ffffff);
+}
+
+.app-card {
+  border-radius: 20px;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+input:focus, button:focus {
+  box-shadow: none !important;
+}
+
+#task-list .list-group-item {
+  border: none;
+  transition: background 0.3s ease;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+#task-list .list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.task-text {
+  cursor: pointer;
+  flex-grow: 1;
+  transition: all 0.2s;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-btn {
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #dc3545 !important;
+  color: white;
+}
+
+/* === DARK MODE === */
+body.dark {
+  background: #1c1f26;
+  color: #f1f1f1;
+}
+
+body.dark .app-card {
+  background-color: #2a2e39;
+  color: #f1f1f1;
+}
+
+body.dark .form-control,
+body.dark .list-group-item {
+  background-color: #39414e;
+  color: #f1f1f1;
+  border-color: #444;
+}
+
+body.dark .form-control::placeholder {
+  color: #ccc;
+}
+
+body.dark .list-group-item:hover {
+  background-color: #3c4454;
+}
+
+body.dark .task-text.completed {
+  color: #777;
+}

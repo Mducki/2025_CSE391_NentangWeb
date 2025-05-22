@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Đăng Ký</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="register-form" novalidate>
+      <h2>Đăng ký tài khoản</h2>
+      <input type="text" id="name" placeholder="Họ tên" />
+      <div class="error" id="error-name"></div>
+
+      <input type="email" id="email" placeholder="Email" />
+      <div class="error" id="error-email"></div>
+
+      <input type="password" id="password" placeholder="Mật khẩu" />
+      <div class="error" id="error-password"></div>
+
+      <button type="submit">Đăng ký</button>
+    </form>
+
+    <div id="success-message" style="display:none;">
+      <h3>Đăng ký thành công!</h3>
+      <button id="toggle-detail">Xem chi tiết</button>
+      <div id="details" style="display:none;">Bạn đã đăng ký thành công, chúc mừng!</div>
+    </div>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>
